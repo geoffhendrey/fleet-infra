@@ -10,7 +10,8 @@ spec:
     branch: main
   secretRef:
     name: flux-system
-  url: ssh://git@github.com/geoffhendrey/fleet-infra
+  #the url should be replaced by an overlay
+  url: ssh://git@github.com/<REPLACE_WITH_ACTUAL_FLUX_SYSTEM_REPO>
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
@@ -19,7 +20,8 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./flux-system/overlays/env1
+  #the path to the correct cluster should be replaced by an overlay
+  path: ./clusters/XXX
   prune: true
   sourceRef:
     kind: GitRepository
