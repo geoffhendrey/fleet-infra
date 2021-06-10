@@ -1,3 +1,5 @@
+#demonstrate how to use inline json 6902 patches. But there seems to be a flux bug or missing feature
+#because flux errors out and complains unexpected 'patch'
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 bases:
