@@ -5,3 +5,4 @@ metadata:
   namespace: flux-system
 spec:
   url: ssh://git@github.com/geoffhendrey/fleet-infra
+  branch: foobranch
